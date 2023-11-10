@@ -5,8 +5,11 @@
 body {
     overflow-x: hidden;
     overflow-y: hidden;
-    background: #fafafa;
+    background: url('../style/img/bg-lideres2.png') center no-repeat;
+    background-size: cover;
+    
 }
+
 
 h1,
 h2,
@@ -18,8 +21,6 @@ h2,
     padding: 30px;
     margin: 0px auto;
     max-width: 650px;
-    border: none;
-    box-shadow: 0 0 10px black;
     cursor: pointer;
 }
 
@@ -38,6 +39,7 @@ h1 {
 .table>:not(caption)>*>* {
     background-color: var(--primary);
     vertical-align: middle;
+    
 
 }
 
@@ -52,6 +54,41 @@ audio {
 svg {
     width: 25px;
     height: 23px;
+}
+
+.bi-info-circle-fill {
+    position: absolute;
+    left: 85%;
+    top: 8.5%;
+    width: 16px;
+    height: 16px;
+    color: #fff !important;
+    cursor: pointer;
+}
+
+.bi-info-circle-fill:hover~span {
+    display: block;
+    position: absolute;
+    transition: all .5s !important;
+    transition-duration: .2s;
+}
+
+.span-info {
+    position: relative;
+    display: none;
+    color: #fff;
+    background-color: rgb(95, 190, 190);
+    width: 50%;
+    height: 50%;
+    padding: 10px;
+    text-align: justify;
+    align-items: first baseline;
+    font-weight: 500;
+    border-radius: 4px;
+    position: relative;
+    z-index: 2;
+    left: 30%;
+    top: 15%;
 }
 
 .linha {
@@ -103,9 +140,19 @@ td {
     }
 
     .btn-audio {
-        padding: 6.5px;
-
+        padding: 6px !important;
     }
+
+    .bi-info-circle-fill {
+        left: 87.5%;
+        top: 6.6%;
+    }
+
+    .span-info {
+        width: 60%;
+        height: 25%;
+    }
+    
 
 }
 
@@ -125,7 +172,7 @@ audio {
     height: 30px;
     font-weight: 700;
     margin-left: 10px;
-    padding: 2px;
+    padding:  2px 5px;
     font-size: 10px;
     vertical-align: middle;
     border-radius: 5px;
@@ -142,6 +189,8 @@ audio {
     position: relative;
     max-height: 280px;
     overflow-y: auto;
+    box-shadow: 0 0 10px black;
+    border-radius: 2px;
 }
 
 .container {
@@ -156,8 +205,8 @@ audio {
 
 ::-webkit-scrollbar {
     width: 10px;
-    background: #F4F4F4;
-    border-radius: 5px;
+    background-color: #bdb7b7;
+    border-radius: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
