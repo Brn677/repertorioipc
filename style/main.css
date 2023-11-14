@@ -46,8 +46,6 @@ h1 {
 .table>:not(caption)>*>* {
     background-color: var(--primary);
     vertical-align: middle;
-    
-
 }
 
 th,
@@ -81,7 +79,7 @@ svg {
 }
 
 .span-info {
-    position: relative;
+    
     display: none;
     color: #fff;
     background-color: rgb(95, 190, 190);
@@ -92,7 +90,6 @@ svg {
     align-items: first baseline;
     font-weight: 500;
     border-radius: 4px;
-    position: relative;
     z-index: 2;
     left: 30%;
     top: 15%;
@@ -213,4 +210,26 @@ audio {
 ::-webkit-scrollbar-thumb {
     background: #65927c;
     border-radius: 5px;
+}
+
+/*Barra de Pesquisa*/
+.barraPesquisa{
+    width: 100%;
+    margin: 2% auto;
+    border-radius: 19px;
+    border: none;
+    background-color: bisque;
+    opacity: 70%;
+    box-shadow: 0 0 10px black;
+}
+
+input[type="text"]{
+    padding: 5px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+    min-width: 80%;
+}
+::-webkit-input-placeholder{
+    color: #018149;
 }
