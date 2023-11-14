@@ -5,7 +5,7 @@ document.getElementById("searchBar").addEventListener("input", function () {   /
   const linhas = tabela.getElementsByTagName("tr");
 
   for (let i = 1; i < linhas.length; i++) {
-    let texto = linhas[i].textContent.trim().charAt(0).toLowerCase();
+    let texto = linhas[i].textContent.trim().slice().toLowerCase();
     if (texto.includes(termo)) {
       linhas[i].style.display = "";
     } else {
