@@ -5,7 +5,7 @@ document.getElementById("searchBar").addEventListener("input", function () {   /
   const linhas = tabela.getElementsByTagName("tr");
 
   for (let i = 1; i < linhas.length; i++) {
-    let texto = linhas[i].textContent.trim().slice().toLowerCase();
+    let texto = linhas[i].textContent.trim().substring(0, 3).toLowerCase();
     if (texto.includes(termo)) {
       linhas[i].style.display = "";
     } else {
@@ -13,3 +13,28 @@ document.getElementById("searchBar").addEventListener("input", function () {   /
     }
   }
 });
+
+
+
+
+/*
+const playlist = [
+  "audio/A Começar em Mim.mp3",
+  "audio/06. Vejo o Senhor - Louvor X.mp3",
+];
+
+let currentSongIndex = 0;
+let audio = document.getElementById("myAudio");
+
+
+function nextSong() {
+  currentSongIndex = (currentSongIndex + 1) % playlist.length;
+  audio.src = playlist[currentSongIndex];
+  audio.play();
+ 
+}
+
+setTimeout(nextSong, 3000);
+
+audio.src = playlist[currentSongIndex];
+audio.play();*/
